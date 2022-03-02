@@ -10,9 +10,9 @@ app.get('/greeting/:firstname', (req, res) => {
     res.send('Hello ' + req.params.firstname + '. How is your day going?' )
 })
 
-// app.get('/tip/:total/:percent', (req, res)=>{
-
-// })
+app.get('/tip/:total/:tipPercent', (req, res)=>{
+    res.send('Tip Amount: $' + (req.params.total * ((req.params.tipPercent)/ 100)) + '.00')
+})
 app.listen(port,() => {
     console.log('listening on port' , port);
 });
