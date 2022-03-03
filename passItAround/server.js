@@ -14,8 +14,8 @@ const port = 3000
   - Add a link to start over, which directs the user back to the home page.
 */
 
-app.get('/99', (req, res) => {
-    res.send("99 Bottles of Root Beer on the Wall" + `<a href = "http://localhost:3000/98"> Take one down </a>`)
+app.get('/', (req, res) => {
+    res.send("99 Bottles of Root Beer on the Wall" + `<a href = "/98"> Take one down </a>`)
 })
 
 app.get('/0', (req, res) => {

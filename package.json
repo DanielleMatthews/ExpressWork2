@@ -20,5 +20,6 @@
   "homepage": "https://github.com/DanielleMatthews/ExpressWork2#readme",
   "dependencies": {
     "express": "^4.17.3"
-  }
+  },
+  "devDependencies": {}
 }
